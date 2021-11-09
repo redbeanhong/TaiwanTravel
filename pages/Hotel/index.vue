@@ -1,4 +1,4 @@
 <template lang="pug">
   div
-    h2 Index
+    h2 Hotel
 </template>
