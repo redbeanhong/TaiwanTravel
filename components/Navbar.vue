@@ -1,5 +1,5 @@
 <template lang="pug">
-  nav(class="navbar navbar-expand-lg navbar-dark bg-info")
+  nav(class="navbar navbar-expand-lg navbar-dark bg-info p-4")
     .container
       a(class="navbar-brand" href="#") TAIWAN TRAVEL
       button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation")
