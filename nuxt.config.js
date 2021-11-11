@@ -14,6 +14,11 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
+    script: [
+      {
+        src: '/bootstrap.bundle.min.js'
+      }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
