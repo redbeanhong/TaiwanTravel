@@ -1,22 +1,23 @@
 <template lang="pug">
   .banner(:class="bannerClass")
-    img.my-4(src="@/assets/img/logo/logo--white.svg", alt="logo" v-if="logoWhite")
-    img.my-4(src="@/assets/img/logo/logo--black.svg", alt="logo" v-else)
-    .row.g-3.bg-light.rounded
-      .col-auto.input--mid
-        select(class="form-select" aria-label="Default select example")
-          option(selected) 北部地區
-          option(value="1") One
-          option(value="2") Two
-          option(value="3") Three
-      .col-auto.input--mid
-        select(class="form-select" aria-label="Default select example")
-          option(selected) 台北市
-          option(value="1") One
-          option(value="2") Two
-          option(value="3") Three
-      .col-auto
-        button(type="submit" class="btn btn-warning mb-3") SEARCH
+    .banner__mask
+      img.banner__logo.my-4(src="@/assets/img/logo/logo--white.svg", alt="logo" v-if="logoWhite")
+      img.banner__logo.my-4(src="@/assets/img/logo/logo--black.svg", alt="logo" v-else)
+      .row.g-3.bg-light.rounded(v-if="this.$route.name==='index'")
+        .col-lg-auto.input--mid
+          select(class="form-select" aria-label="Default select example")
+            option(selected) 北部地區
+            option(value="1") One
+            option(value="2") Two
+            option(value="3") Three
+        .col-lg-auto.input--mid
+          select(class="form-select" aria-label="Default select example")
+            option(selected) 台北市
+            option(value="1") One
+            option(value="2") Two
+            option(value="3") Three
+        .col-lg-auto.banner__search
+          button(type="submit" class="btn btn-warning mb-3 text-light") SEARCH
 </template>
 <script>
 export default {
@@ -42,7 +43,7 @@ export default {
         {
           name: 'Tourism',
           bannerClass: 'banner--tourism',
-          logoWhite: false
+          logoWhite: true
         }
       ]
     }

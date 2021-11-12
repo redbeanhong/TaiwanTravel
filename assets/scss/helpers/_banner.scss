@@ -1,13 +1,29 @@
 .banner {
-  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('@/assets/img/banner/banner--index.jpg');
+}
+
+.banner__mask {
+  min-height: 100vh;
+  background-color: rgba(#1c4852, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.banner__logo{
+  width: 80%;
+  @include media-breakpoint-up(sm) {
+    width: auto;
+  }
+}
+
+.banner__search{
+  display: flex;
+  justify-content: center;
 }
 
 $bannerImages: (
@@ -23,6 +39,8 @@ $bannerImages: (
   }
 }
 
-.input--mid{
-  min-width: 270px;
+.input--mid {
+  @include media-breakpoint-up(lg) {
+    min-width: 270px;
+  }
 }
