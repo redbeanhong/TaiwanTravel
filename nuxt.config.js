@@ -14,7 +14,21 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    script: [
+      {
+        src: '/bootstrap.bundle.min.js'
+      }
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com" crossorigin' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+TC:wght@400;500&display=swap'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -55,5 +69,8 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  router: {
+    linkExactActiveClass: 'active'
   }
 }

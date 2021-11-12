@@ -2,3 +2,8 @@
   div
     h2 Tourism
 </template>
+<script>
+export default {
+  layout: 'FrontEnd'
+}
+</script>
