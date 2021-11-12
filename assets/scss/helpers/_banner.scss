@@ -1,0 +1,28 @@
+.banner {
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('@/assets/img/banner/banner--index.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+$bannerImages: (
+  index: url('@/assets/img/banner/banner--index.jpg'),
+  food: url('@/assets/img/banner/banner--food.jpg'),
+  hotel: url('@/assets/img/banner/banner--hotel.jpg'),
+  tourism: url('@/assets/img/banner/banner--tourism.jpg')
+) !default;
+
+@each $name, $url in $bannerImages {
+  .banner--#{$name} {
+    background-image: $url;
+  }
+}
+
+.input--mid{
+  min-width: 270px;
+}
