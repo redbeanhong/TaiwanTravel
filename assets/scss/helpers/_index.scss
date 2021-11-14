@@ -1,0 +1,34 @@
+.search__icon {
+  width: 20px;
+}
+
+.border--shadow {
+  border: 2px solid rgba($dark, 0.5);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.img--mid{
+  min-height: 240px;
+}
+
+.img--center{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.text--limit--1{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text--limit--3{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

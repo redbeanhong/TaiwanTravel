@@ -72,5 +72,10 @@ export default {
   },
   router: {
     linkExactActiveClass: 'active'
+  },
+  env: {
+    VUE_APP_APIPATH: process.env.VUE_APP_APIPATH,
+    VUE_APP_ID: process.env.VUE_APP_ID,
+    VUE_APP_KEY: process.env.VUE_APP_KEY
   }
 }
