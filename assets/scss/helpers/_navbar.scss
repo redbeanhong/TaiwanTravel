@@ -11,7 +11,7 @@
     bottom: 0;
     left: -100%;
   }
-  .nav-link.active{
+  .nav-link.nuxt-link-active{
     &::after{
       background-color: $light;
       left: 0;

@@ -1,3 +1,12 @@
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/TaiwanTravel/'
+        }
+      }
+    : {}
+
 export default {
   mode: 'universal',
   /*
@@ -77,5 +86,6 @@ export default {
     VUE_APP_APIPATH: process.env.VUE_APP_APIPATH,
     VUE_APP_ID: process.env.VUE_APP_ID,
     VUE_APP_KEY: process.env.VUE_APP_KEY
-  }
+  },
+  ...routerBase
 }
