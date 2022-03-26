@@ -23,11 +23,6 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    script: [
-      {
-        src: '/bootstrap.bundle.min.js'
-      }
-    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -50,7 +45,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: '~/plugins/bootstrap.js', mode: 'client' }],
   /*
    ** Nuxt.js dev-modules
    */
@@ -86,6 +81,9 @@ export default {
     VUE_APP_APIPATH: process.env.VUE_APP_APIPATH,
     VUE_APP_ID: process.env.VUE_APP_ID,
     VUE_APP_KEY: process.env.VUE_APP_KEY
+  },
+  static: {
+    prefix: true
   },
   ...routerBase
 }

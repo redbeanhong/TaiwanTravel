@@ -1,9 +1,9 @@
-.navbar__border{
-  .nav-link{
+.navbar__border {
+  .nav-link {
     position: relative;
   }
-  .nav-link::after{
-    transition: .5s;
+  .nav-link::after {
+    transition: 0.5s;
     content: '';
     position: absolute;
     width: 100%;
@@ -11,8 +11,9 @@
     bottom: 0;
     left: -100%;
   }
-  .nav-link.nuxt-link-active{
-    &::after{
+  .nav-link.nuxt-link-exact-active,.nav-link.active {
+    color: $white;
+    &::after {
       background-color: $light;
       left: 0;
     }

@@ -5,7 +5,7 @@
     .tourism.row
       .tourism__search.col-md-3
         .input-group.mb-3.border.border--shadow.rounded
-          input.form-control.border-0.bg-white(type="text" placeholder="關鍵字查詢" aria-label="關鍵字查詢" aria-describedby="button-addon2")
+          input.form-control.border-0.bg-white(disabled type="text" placeholder="關鍵字查詢" aria-label="關鍵字查詢" aria-describedby="button-addon2")
           button.btn.border-0.bg-white(type="button" id="button-addon2")
             img.search__icon(src="@/assets/img/icon/search.svg", alt="search")
         form.row.g-0.p-3.border.border--shadow.rounded
